@@ -1,4 +1,4 @@
-{% set version = "8.0.1" %}
+{% set version = "8.0.2" %}
 
 package:
   name: valkey-server
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/valkey-io/valkey/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 1e1d6dfbed2f932a87afbc7402be050a73974a9b19a9116897e537a6638e5e1d
+  sha256: e052c45b3cbe512e24fdfdc3fd337f9f5e4b8f8b8713f349ba867b829c8ff11a
 
 build:
   number: 0
