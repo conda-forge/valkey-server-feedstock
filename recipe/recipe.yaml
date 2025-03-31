@@ -22,6 +22,7 @@ requirements:
     - ${{ stdlib('c') }}
     - make
     - pkg-config
+    - python
   run_constraints:
     # conflict with redis-server
     - redis-server <0.a0
