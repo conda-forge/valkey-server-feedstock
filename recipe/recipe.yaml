@@ -14,6 +14,7 @@ build:
   skip:
     - win
   script:
+    - export PYTHON=$BUILD_PREFIX/bin/python
     - make install -j${CPU_COUNT}
 
 requirements:
