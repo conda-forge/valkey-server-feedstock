@@ -3,7 +3,7 @@ About valkey-server-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/valkey-server-feedstock/blob/main/LICENSE.txt)
 
-Home: https://valkey.io
+Home: https://valkey.io/
 
 Package license: BSD-3-Clause
 
@@ -14,7 +14,6 @@ Development: https://github.com/valkey-io/valkey
 Valkey is a high-performance data structure server that primarily serves
 key/value workloads. It supports a wide range of native structures and an
 extensible plugin system for adding new data structures and access patterns.
-
 
 Current build status
 ====================
@@ -41,10 +40,24 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_aarch64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=23175&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/valkey-server-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=23175&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/valkey-server-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=23175&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/valkey-server-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_" alt="variant">
                 </a>
               </td>
             </tr>
