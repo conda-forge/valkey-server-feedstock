@@ -10,7 +10,7 @@ source:
   sha256: 8f862b3b0a72fd40587793964539589f6f83d01361ca1598b370cfaa301e0ec0
 
 build:
-  number: 0
+  number: 1
   skip: win
   script:
     - make install -j${CPU_COUNT}
