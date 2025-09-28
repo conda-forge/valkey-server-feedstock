@@ -20,8 +20,9 @@ requirements:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
     - make
-    - openssl
     - pkg-config
+    - libopenssl-static
+    - openssl
 
   run_constraints:
     # conflict with redis-server
