@@ -7,19 +7,20 @@ package:
 
 source:
   url: https://github.com/valkey-io/valkey/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 6b167eb7072f5785c0c0af807960889a3d346fc3d0ecb571064b019ee365ee00
+  sha256: 8f862b3b0a72fd40587793964539589f6f83d01361ca1598b370cfaa301e0ec0
 
 build:
-  number: 0
+  number: 2
   skip: win
   script:
-    - make install -j${CPU_COUNT}
+    - make install -j${CPU_COUNT} BUILD_TLS=yes
 
 requirements:
   build:
     - ${{ compiler('c') }}
     - ${{ stdlib('c') }}
     - make
+    - openssl
     - pkg-config
 
   run_constraints:
