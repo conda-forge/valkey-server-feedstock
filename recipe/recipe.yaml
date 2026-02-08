@@ -1,5 +1,5 @@
 context:
-  version: "9.0.1"
+  version: "9.0.2"
 
 package:
   name: valkey-server
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/valkey-io/valkey/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 9cfbc5f32a2a6058ee0f8c532b9c4d24167cc49d719f091dd75f1bb8353a1fc5
+  sha256: 0ebaa583659ab784ce19170627032cfab7793a5570b7262775f9dbf77c103ec7
 
 build:
   number: 2
