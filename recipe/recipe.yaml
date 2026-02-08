@@ -10,10 +10,10 @@ source:
   sha256: 9cfbc5f32a2a6058ee0f8c532b9c4d24167cc49d719f091dd75f1bb8353a1fc5
 
 build:
-  number: 0
+  number: 2
   skip: win
   script:
-    - make install -j${CPU_COUNT}
+    - make install -j${CPU_COUNT} BUILD_TLS=yes
 
 requirements:
   build:
@@ -21,6 +21,8 @@ requirements:
     - ${{ stdlib('c') }}
     - make
     - pkg-config
+  host:
+    - openssl
 
   run_constraints:
     # conflict with redis-server
