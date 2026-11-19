@@ -13,7 +13,7 @@ build:
   number: 0
   skip: win
   script:
-    - make install -j${CPU_COUNT} BUILD_TLS=yes
+    - make install -j${CPU_COUNT} BUILD_TLS=yes OPENSSL_PREFIX=$PREFIX
 
 requirements:
   build:
